@@ -1,3 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+:root {
+    --main-color: black;
+    --main-font-family: 'Young Serif', serif;
+    --main-font-size: 20px;
+}
+
+* {
+    font-family: var(--main-font-family);
+}
+
+
 h1 {
     color:green;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main-container {
+    display:grid;
+    width: 50% ;
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap:2px;
+}
+
+.main-container div {
+    display:flex;
+    background-color: rgb(255, 49, 186);
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.menu-container {
+    display:flex;
+    width: 50%;
+    height: 150px;
+    align-items:center;
+    justify-content: center;
+    gap: 200px;
+}
+
+.menu-container button {
+    height: 50px;
+    width: 80px;
 }
